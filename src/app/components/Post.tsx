@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default async function PostPage({ params }: { params: { id: string } }) {
     const url = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
