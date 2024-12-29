@@ -3,7 +3,7 @@ import Link from "next/link";
 export default async function Home() {
  
   const url = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const res = await url.json();
+  const res:any = await url.json();
 
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
