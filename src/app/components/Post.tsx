@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default async function PostPage({ params }: { params: { id: string } }) {
     const url = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
     const post = await url.json();
@@ -11,7 +13,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
             User ID: {post.userId} | Post ID: {post.id}
           </span>
           <div className="mt-6">
-            <a href="/" className="text-blue-600 hover:underline font-semibold"> Back to Posts</a>
+            <Link href="/" className="text-blue-600 hover:underline font-semibold"> Back to Posts </Link>
           </div>
         </div>
       </div>
