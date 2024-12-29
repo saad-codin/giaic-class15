@@ -12,9 +12,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
           <span className="text-sm text-gray-500">
             User ID: {post.userId} | Post ID: {post.id}
           </span>
-          <div className="mt-6">
-            <Link href="/" className="text-blue-600 hover:underline font-semibold"> Back to Posts </Link>
-          </div>
+         
         </div>
       </div>
     );
